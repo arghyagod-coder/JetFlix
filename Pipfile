@@ -14,6 +14,7 @@ flask-login = "*"
 wtforms = "*"
 flask-wtf = "*"
 python-dotenv = "*"
+email-validator = "*"
 
 [dev-packages]
 
