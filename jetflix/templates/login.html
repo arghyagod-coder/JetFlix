@@ -19,8 +19,7 @@
 
             <div class="showcase-content">
                 <div class="formm">
-                    <form>
-                        <h1>Get your Free Account</h1>
+                        <h1>Sign In</h1>
                         <div class="info">
                         <form method="POST" class="info" style="color: white;">
                             {{ form.hidden_tag() }}
@@ -30,16 +29,14 @@
                             <br>
                             {{ form.password(class='email', placeholder="Enter your Password") }} 
                             <br>
+                            <div class="btn">
+                                {{ form.submit(class='btn btn-primary', placeholder="Sign In") }}
+                            </div>
                         </form>
                     </div>
-                        <div class="btn">
-                            {{ form.submit(class='btn btn-primary', placeholder="Sign In") }}
-                        </div>
-
-                    </form>
                     <div class="signup">
-                        <p>Already have an Account?</p>
-                        <a href="https://www.netflix.com/dz-en/">Sign In</a>
+                        <p>Don't have an account yet?</p>
+                        <a href="{{ url_for('register_page') }}">Register</a>
                     </div>
                 </div>
 

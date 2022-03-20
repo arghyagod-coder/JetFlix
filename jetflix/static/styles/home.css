@@ -35,6 +35,7 @@ a{
 
 a:hover{
     color:white;
+    text-decoration: none;
 }
 
 .navbar.active .nav-link:hover,
@@ -109,4 +110,11 @@ body {
     rgba(0,0,0,0) 80%,
     rgba(0,0,0,0.9) 100%
   ),url(https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/2341e349-a6fc-4b04-a0ad-9b21defa1f88/IN-en-20220307-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .unt{
+        font-size: 2rem;
+    }
 }

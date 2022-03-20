@@ -97,6 +97,7 @@ img {
 }
 
 .formm .info .email {
+	color: white;
 	margin-bottom: 30px;
 	width: 100%;
 	height: 50px;
@@ -249,4 +250,17 @@ footer {
 	font-size: inherit;
 	padding-left: 10px;
 	background: #333333;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .showcase-content {
+		padding: 30px 35px;
+	}
+
+	.formm h1 {
+		font-size: 2rem;
+		margin-bottom: 1px;
+	}
+	
 }

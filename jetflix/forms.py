@@ -1,4 +1,3 @@
-from cProfile import label
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, URLField
 from wtforms.validators import Length, Email, EqualTo, DataRequired, ValidationError, URL
@@ -7,7 +6,7 @@ from jetflix.models import User
 class RegisterForm(FlaskForm):
 
     def validate_username(self, username):
-        user = User.query.filter_by(usernme=username.data).first()
+        user = User.query.filter_by(username=username.data).first()
         if user:
             raise ValidationError("Username already exists! Try a different name!")
 
